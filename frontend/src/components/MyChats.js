@@ -51,10 +51,10 @@ const MyChats = ({ fetchAgain }) => {
       flexDir={"column"}
       alignItems={"center"}
       p={3}
-      bg="white"
+      bg="#1f1b1b"
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
-      borderWidth="1px"
+      // borderWidth="1px"
     >
       <Box
         pb={3}
@@ -65,9 +65,9 @@ const MyChats = ({ fetchAgain }) => {
         w={"100%"}
         justifyContent={"space-between"}
         alignItems={"center"}
+        color={"White"}
       >
         My Chats
-  
         <GroupChatModal>
           <Button
             display={"flex"}
@@ -84,7 +84,7 @@ const MyChats = ({ fetchAgain }) => {
         display={"flex"}
         flexDir={"column"}
         p={3}
-        bg="#F8F8F8"
+        bg="white"
         w="100%"
         h="100%"
         borderRadius="lg"
@@ -96,7 +96,7 @@ const MyChats = ({ fetchAgain }) => {
               <Box
                 onClick={() => setSelectedChat(chat)}
                 cursor={"pointer"}
-                bg={selectedChat === chat ? "#38B2AC" : "#E8E8E8"}
+                bg={selectedChat === chat ? "#51c64b" : "#E8E8E8"}
                 color={selectedChat === chat ? "white" : "black"}
                 px={3}
                 py={2}
